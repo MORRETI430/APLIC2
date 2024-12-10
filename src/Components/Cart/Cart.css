@@ -1,0 +1,113 @@
+.cart {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.219);
+    bottom: -260px;
+    right: 0px;
+    z-index: 11;
+    border-radius: 10px;
+}
+
+.cart .title {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+}
+
+.cart .title p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 22px;
+    padding-left: 10px;
+}
+
+.cart .cart-prods {
+    width: 100%;
+    height: calc(250px - 60px);   
+}
+
+.cart .cart-prods .prod-cont {
+    width: 100%;
+    height: 45px;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cart .cart-prods .prod-cont .remove {
+    width: 20px;
+    margin-right: 10px;
+    transition: 0.2s;
+    border: none;
+    border-radius: 0;
+}
+
+.cart .cart-prods .prod-cont .remove:hover {
+    cursor: pointer;
+    border: none;
+}
+
+.cart .cart-prods .prod-cont .img {
+    width: 16%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.cart .cart-prods .prod-cont .text {
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    width: auto;
+    flex-direction: column;
+}
+
+.cart .cart-prods .prod-cont .text p {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.548);
+    margin-top: 2px;
+}
+
+.cart .cart-prods .prod-cont .text .price {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.cart .cart-prods .prod-cont .text .price p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.cart .cart-prods .prod-cont .text .price p:last-child {
+    color: black;
+    font-weight: 600;
+}
+
+.cart .checkout {
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    position: absolute;
+    bottom: 14px;
+    left: 16px;
+    cursor: pointer;
+}
